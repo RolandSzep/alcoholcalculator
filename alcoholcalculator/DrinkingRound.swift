@@ -17,34 +17,6 @@ class DrinkingRound {
     var alcohol = ""
     var amount = 0.0
     
-    /*var radius: Double {
-        get {
-            return pizzaDiameter/2.0
-        }
-        set(newRadius) {
-            pizzaDiameter = newRadius * 2.0
-        }
-    }
-    
-    var area: Double {
-        get {
-            return pizzaArea()
-        }
-    }
-    
-    func pizzaArea() -> Double {
-        return pow(radius,2)*Double.pi
-    }
-    
-    func diameterFromString(_ str: String) -> Double {
-        switch str {
-            case "24 cm": return 24.0
-            case "30 cm": return 30.0
-            case "50 cm": return 50.0
-        default: return 0.0
-        }
-    }*/
-    
     func toString() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .short
