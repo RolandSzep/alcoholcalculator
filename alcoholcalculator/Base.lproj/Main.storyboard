@@ -57,7 +57,7 @@
                                         </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" id="5FF-hV-WNZ" customClass="LineChart" customModule="alcoholcalculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="216.5" width="414" height="215"/>
+                                        <rect key="frame" x="0.0" y="216.5" width="414" height="215.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
