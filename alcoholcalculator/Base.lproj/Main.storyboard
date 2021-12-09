@@ -40,54 +40,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Körök - 0g bevitt alkohol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-tS-A1Q">
-                                <rect key="frame" x="20" y="160" width="374" height="24"/>
+                                <rect key="frame" x="15" y="150" width="384" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-69-sRU">
-                                <rect key="frame" x="0.0" y="194" width="414" height="150"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="J1L-z5-7Co"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vb3-KL-gqv"/>
-                                </connections>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Józan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iJ-0r-Ywl">
-                                <rect key="frame" x="20" y="786" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ez 0 ezrelék véralkohol szintnek felel meg." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-bf-WBW" userLabel="Blood Alcohol Level Label">
-                                <rect key="frame" x="20" y="676" width="374" height="90"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="5FF-hV-WNZ" customClass="LineChart" customModule="alcoholcalculator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="352" width="414" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-qw-UIA">
+                                <rect key="frame" x="0.0" y="193.5" width="414" height="648.5"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-69-sRU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="215.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="J1L-z5-7Co"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vb3-KL-gqv"/>
+                                        </connections>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" id="5FF-hV-WNZ" customClass="LineChart" customModule="alcoholcalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="216.5" width="414" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z9e-nS-2af">
+                                        <rect key="frame" x="0.0" y="433" width="414" height="215.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ez 0 ezrelék véralkohol szintnek felel meg." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-bf-WBW" userLabel="Blood Alcohol Level Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="169.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Józan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iJ-0r-Ywl">
+                                                <rect key="frame" x="0.0" y="179.5" width="414" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Yq-tS-A1Q" secondAttribute="trailing" constant="20" id="36y-vv-z06"/>
-                            <constraint firstItem="6iJ-0r-Ywl" firstAttribute="top" secondItem="1f9-bf-WBW" secondAttribute="bottom" constant="20" id="3OX-Dv-VCJ"/>
-                            <constraint firstItem="FPI-69-sRU" firstAttribute="top" secondItem="3Yq-tS-A1Q" secondAttribute="bottom" constant="8" symbolic="YES" id="6g5-dE-Y32"/>
-                            <constraint firstItem="1f9-bf-WBW" firstAttribute="top" secondItem="5FF-hV-WNZ" secondAttribute="bottom" constant="30" id="7Xg-cw-xCu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPI-69-sRU" secondAttribute="trailing" id="8if-2b-S7m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6iJ-0r-Ywl" secondAttribute="bottom" constant="40" id="Gyb-jh-1Id"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6iJ-0r-Ywl" secondAttribute="trailing" constant="20" id="K3K-sQ-W19"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPI-69-sRU" secondAttribute="bottom" id="RnN-f4-ZWz"/>
-                            <constraint firstItem="FPI-69-sRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZVX-jB-DqS"/>
-                            <constraint firstItem="3Yq-tS-A1Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gC1-jZ-aD3"/>
-                            <constraint firstItem="3Yq-tS-A1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hzf-q9-Sgo"/>
-                            <constraint firstItem="1f9-bf-WBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iKu-AP-Y91"/>
-                            <constraint firstItem="6iJ-0r-Ywl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m8f-fi-Ewn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1f9-bf-WBW" secondAttribute="trailing" constant="20" id="vSw-FS-p2i"/>
+                            <constraint firstItem="3Yq-tS-A1Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="D5S-e3-W9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Yq-tS-A1Q" secondAttribute="trailing" constant="15" id="G5f-Vi-QMK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UVF-qw-UIA" secondAttribute="bottom" constant="20" id="HpW-hH-b5d"/>
+                            <constraint firstItem="UVF-qw-UIA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RRy-is-6hJ"/>
+                            <constraint firstItem="UVF-qw-UIA" firstAttribute="top" secondItem="3Yq-tS-A1Q" secondAttribute="bottom" constant="20" id="VAw-9t-LaI"/>
+                            <constraint firstItem="3Yq-tS-A1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="n6X-ei-oTv"/>
+                            <constraint firstItem="UVF-qw-UIA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z32-YO-V3a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alkohol kalkulátor" id="pQO-3Y-4hm">
