@@ -144,7 +144,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="15" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="MKE-xf-QcK">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="MKE-xf-QcK">
                                                 <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="1Q2-KE-QLE"/>

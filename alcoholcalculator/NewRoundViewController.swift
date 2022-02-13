@@ -36,9 +36,13 @@ class NewRoundViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         var selectRow = 30
         let preferences = UserDefaults.standard
         if preferences.object(forKey: "weight") != nil {
-            selectRow = preferences.integer(forKey: "weight") - 40
+            weight = preferences.integer(forKey: "weight")
+            selectRow = weight - 40
         }
         weightPicker.selectRow(selectRow, inComponent: 0, animated: false)
+        
+        timePicker.minimumDate = Date.now.addingTimeInterval(TimeInterval(-24*60*60))
+        timePicker.maximumDate = Date.now
         
         alcoholPicker.dataSource = self
         alcoholPicker.delegate = self
