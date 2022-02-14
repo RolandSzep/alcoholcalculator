@@ -65,14 +65,14 @@
                                         <rect key="frame" x="0.0" y="433" width="414" height="215.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ez 0 ezrelék véralkohol szintnek felel meg." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-bf-WBW" userLabel="Blood Alcohol Level Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="169.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Józan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iJ-0r-Ywl">
-                                                <rect key="frame" x="0.0" y="179.5" width="414" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Józan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iJ-0r-Ywl">
+                                                <rect key="frame" x="0.0" y="182" width="414" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                                 <color key="textColor" systemColor="systemGreenColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

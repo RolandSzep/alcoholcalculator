@@ -83,7 +83,7 @@ class ViewController: UIViewController {
             //let value = Int(arc4random() % 500)
             
             let formatter = DateFormatter()
-            formatter.dateFormat = "hh:mm"
+            formatter.dateFormat = "HH:mm"
             var date = Date()
             date.addTimeInterval(TimeInterval(60*60*i))
             
@@ -97,8 +97,9 @@ class ViewController: UIViewController {
     func setSober(isSober: Bool, time: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
+        let tomorrow = Calendar.current.isDateInTomorrow(time) ? "\nholnap" : ""
         
-        soberLabel.text = isSober ? "Józan" : "Ittas eddig: \(formatter.string(from: time))"
+        soberLabel.text = isSober ? "Józan" : "Ittas eddig: \(tomorrow) \(formatter.string(from: time))"
         soberLabel.textColor = isSober ? UIColor.systemGreen : UIColor.systemRed
     }
     
